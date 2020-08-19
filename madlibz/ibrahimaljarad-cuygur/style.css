@@ -1,0 +1,103 @@
+* body{
+    font-family: 'Pangolin', cursive; 
+  }
+  
+  
+   input{
+   background-color: rgb(238, 238, 238);
+   padding: 2px 5px;
+   width: 80px;
+   margin: 5px;
+   height:20px;
+   border-radius: 5px;
+   
+ }
+  input:focus{
+   box-shadow: 0 0 8px 0 dodgerblue;
+ } 
+ .row{
+   background-color: #44bcd8;
+   border-radius: 5px;
+   font-size: 20px;
+   }
+ 
+ /* .myFileds{
+   background-color: rgb(235, 44, 44);
+   
+   
+ }
+ .myFileds:focus{
+   box-shadow: 0 0 8px 0 dodgerblue;
+ }
+ .wordsStyle{
+   font-family: Arial,"Times New Roman";
+   font-size: 20px;
+   
+   text-align: left;
+   text-indent: 30px;
+   
+   color: rgb(6, 1, 19);
+   word-spacing: 1px;
+   line-height: 10px;
+   background-color: rgb(255, 255, 255);
+   width: 50%;
+ }*/
+  .madLibsEdit {
+   margin: 20px;
+   padding: 10px;
+   word-spacing: 2px;
+   
+ }  
+ .madLibsPreview{
+   margin: 20px;
+   padding: 10px;
+   word-spacing: 5px;
+   padding-top: 45px;
+ }
+ 
+ .kids {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 2em;
+   
+ }
+ 
+ .kids img {
+   border-radius: 25px;
+ }
+ 
+ input:not(:placeholder-shown) {
+   background-color:#17A2B8;
+ }
+ 
+ input:placeholder-shown {
+   border-color: rgb(219, 221, 85);
+ }
+ 
+ 
+ 
+ @media (max-width: 576px) {
+   .headline {
+     text-align: center;
+   }
+   .display-4 {
+     font-size: 2em;
+   }
+   .madLibsEdit, .madLibsPreview {
+     margin: 0px;
+     padding: 10px;
+   }
+   .madlibs {
+     max-width: 400px;
+   }
+   .kids {
+     margin: 0px;
+     padding: 0px;
+   }
+ } 
+ ::placeholder{
+   color: lightgrey;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
