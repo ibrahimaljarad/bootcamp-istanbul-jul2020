@@ -1,5 +1,0 @@
-Welcome to >>>>Back to the Movies>>>>>>
-
-Our site has created for cinema lovers. The movie and actor information on the site's used in The Movie Database API version 3.
-
-We wish you a good time!
