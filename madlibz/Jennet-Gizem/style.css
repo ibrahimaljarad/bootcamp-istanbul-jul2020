@@ -1,0 +1,71 @@
+/**
+ * Your CSS goes here.
+ */
+.madLibsEdit p,
+.madLibsPreview p {
+  display: inline-block;
+  padding: 2px;
+}
+.madLibsEdit input {
+  margin-left: 10px;
+}
+body {
+  background: rgb(142, 219, 97);
+  background: linear-gradient(
+    90deg,
+    rgba(142, 219, 97, 0.8449754901960784) 34%,
+    rgba(250, 240, 110, 0.7777485994397759) 100%
+  );
+}
+.texts {
+  margin-top: 10px;
+}
+img {
+  width: 200px;
+  height: 450px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+input:focus {
+  background: lightsalmon;
+}
+.header {
+  width: 80px;
+  text-align: center;
+}
+body h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 120px;
+  color: red;
+  padding-top: 15px;
+  text-shadow: 2px 2px grey;
+}
+h1 {
+  text-align: center;
+}
+.previewPos {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+  text-align: center;
+  color: red;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.bells {
+  width: 200px;
+  height: 80px;
+}
+input {
+  border: 1px solid #f24e38;
+  border-radius: 4px;
+}

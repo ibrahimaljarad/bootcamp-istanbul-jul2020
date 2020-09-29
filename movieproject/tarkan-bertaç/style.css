@@ -1,0 +1,77 @@
+
+
+#actors {
+    margin: 24px 16px 0 0;
+}
+
+#example-date-input{
+    margin-left:-1em;
+}
+
+ul{
+    list-style-type: none;
+}
+body{
+    /*background: #4c5584 no-repeat center center fixed;*/
+    background: url("./5d12633f0df9c.image.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.popover {
+    white-space: pre-wrap;    
+}
+
+.result{
+ text-align: center;
+}
+
+.progress{
+    width: 50%;
+    font-size: medium;
+    background:rgba(186, 186, 186, 1);
+    height: 3vh;
+    border:1px solid white;
+}
+.progress-bar{
+    color:black;
+    justify-self: center;
+}
+.card{
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(238,174,202,0.9) 0%, rgba(255,255,255,0.9) 0%);
+}
+
+
+nav{
+    color:black;
+    bottom: 0;
+}
+
+.personPage{
+    background: linear-gradient(90deg, rgba(238,174,202,0.9) 0%, rgba(255,255,255,0.9) 0%);
+    border-radius: 10px;
+}
+
+.moviePage{
+    background: linear-gradient(90deg, rgba(238,174,202,0.9) 0%, rgba(255,255,255,0.9) 0%);
+    border-radius: 10px;
+}
+
+footer{
+    background:rgba(53, 58, 64,0.8);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+}
+
+#aboutt{
+    color:black;
+    background: linear-gradient(90deg, rgba(238,174,202,0.9) 0%, rgba(255,255,255,0.9) 0%);
+    border-radius: 10px;
+    margin:auto;
+}
+@media screen and (min-width:720px) and (max-width:1030px){
+    #container{
+        font-size: x-large;
+    }
+}

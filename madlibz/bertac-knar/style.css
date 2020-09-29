@@ -1,0 +1,102 @@
+/**
+ * Your CSS goes here.
+ */
+ body{
+     background: url("https://wallpaperxyz.com/wp-content/uploads/Laptop-Wallpaper-Hd-1080P-Free-Download-Wallpaperxyz.com-18.jpg") no-repeat;
+     background-size: cover;
+     background-position: center;
+     margin: 0;
+ }
+ h1{
+     color:white;
+     text-align: center;
+     font-family: 'Oswald', sans-serif;
+     font-size: 50px;
+
+ }
+ main{
+     display: flex;
+     justify-content: space-between;
+     font-family: 'Roboto Mono', monospace;
+     width: 100%;
+ }
+ .madLibsEdit{
+     background: rgb(241, 83, 35);
+     padding: 1em;
+     margin: 1em ;
+     border: solid 1px grey;
+     box-shadow: rgba(241, 83, 35, 0.568) 0.5em 0.5em;
+     max-width: 50%;
+     width: 50%
+ }
+ .madLibsPreview{
+     background: yellow;
+     padding: 1em;
+     border: solid 1px grey;
+     margin: 1em ;
+     box-shadow: rgba(255, 255, 0, 0.527) 0.5em 0.5em;
+     max-width:50%;
+     width: 50%;
+
+ }
+ span{
+    font-family: 'Oswald', sans-serif;
+
+ }
+ input{
+    font-family: 'Oswald', sans-serif;
+    background: lightblue;
+    margin-bottom: 2px;
+
+ }
+ .opacity{
+    opacity: 0.5;
+}
+.no-opacity{
+    opacity: 1.0;
+}
+ input:focus{
+     background: lightgreen;
+     opacity: 1.0; 
+ }
+
+ h3{
+     text-align:center
+ }
+ button{
+    font-family: 'Oswald', sans-serif;
+    width: 100px;
+    background: rgb(24, 182, 24);
+    box-shadow: 1px 1px 1px black;
+
+ }
+ @media screen and (max-width: 800px){
+     main{
+         flex-flow: column;
+     }
+     .madLibsEdit{
+         max-width: 100%;
+         width: 95%;
+         padding: 0 0 0 5px;        
+        margin:5px;
+         max-height: 50vh;
+         overflow: scroll;
+         font-size: small;
+
+     }
+     .madLibsPreview{
+         max-width: 100%;
+         width: 95%;
+         padding: 0 0 0 5px;        
+          margin: 5px;
+         max-height: 50vh;
+         overflow: scroll;
+         font-size: small;
+     }
+     input{
+         width: 50px;
+     }
+     button{
+         width: 50px;
+     }
+ }

@@ -1,0 +1,287 @@
+/*
+* edit-gaps refer to input fields on left side of screen
+* preview-gap refers to output fields on right side of screen 
+*/
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("./imgs/camping-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+* Titles of edit and preview divs
+*/
+.subheaders {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin: 4vh 2em 0vh;
+    padding: 1vh;
+}
+#madlibsLogo {
+    height: 25vh;
+    width: auto;
+}
+p {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    padding: 1.5em;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 2;
+    border-radius: 20px;
+    text-align: left;
+}
+.navbar-nav {
+    padding: 0 0 0 0;
+}
+.row {
+    height: 100vh;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+/* language buttons*/
+.lang {
+    padding: 0.3em;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-toggler {
+    background: #c09878;
+}
+
+.navbar {
+    justify-content: center;
+    background: transparent;
+}
+
+@media only screen and (max-width: 350px) {
+    #madlibsLogo {
+        max-width: 15vh;
+        height: auto;
+    }
+    #campfire {
+        max-width: 10vh;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #madlibsLogo {
+        max-width: 39vh;
+        height: auto;
+    }
+    #campfire {
+        max-width: 50vh;
+    }
+    p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .edit-gaps {
+        width: 3.5em;
+        font-size: 1em;
+    }
+    .display-1 {
+        font-size: 5.5rem;
+    }
+    .display-4 {
+        font-size: 1.2rem;
+    }
+    .preview-gap {
+        width: 3.5em;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #campfire {
+        max-width: 30vh;
+    }
+    #madlibsLogo {
+        max-width: 30vh;
+        height: auto;
+    }
+    .edit-gaps {
+        width: 5em;
+        font-size: 1.1em;
+    }
+    .preview-gap {
+        width: 5em;
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+    .display-4 {
+        font-size: 1.3rem;
+    }
+    .arrowgif {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #campfire {
+        max-width: 25vh;
+    }
+    #madlibsLogo {
+        max-width: 25vh;
+        height: auto;
+    }
+    .edit-gaps {
+        width: 4em;
+        font-size: 1em;
+    }
+    .preview-gap {
+        width: 4em;
+        font-size: 1em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .display-4 {
+        font-size: 1.3rem;
+    }
+    .arrowgif {
+        transform: scale(0.8);
+    }
+}
+@media only screen and (max-width: 215px) {
+    #campfire {
+        max-width: 20vh;
+    }
+    #madlibsLogo {
+        max-width: 20vh;
+        height: auto;
+    }
+    .edit-gaps {
+        width: 3em;
+        font-size: 0.8em;
+    }
+    .preview-gap {
+        width: 3em;
+        font-size: 0.8em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    .display-4 {
+        font-size: 1rem;
+    }
+    .arrowgif {
+        transform: scale(0.5);
+    }
+}
+.edit-gaps {
+    border-radius: 12px;
+    height: 1.4em;
+    font-size: 1em;
+    border: solid 0px white;
+    color: white;
+    border-bottom-width: 0.5px;
+    max-width: 9em;
+}
+
+.edit-gaps:focus {
+    outline: none;
+    animation-name: inputGlow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes inputGlow {
+    0% {
+        box-shadow: 0px 0px 25px 5px rgba(224, 175, 123, 1);
+        border: none;
+        border-radius: 10px;
+    }
+    50% {
+        box-shadow: 0px 0px 45px 5px rgba(224, 175, 123, 1);
+        border: none;
+        border-radius: 10px;
+    }
+    100% {
+        box-shadow: 0px 0px 25px 5px rgba(224, 175, 123, 1);
+        border: none;
+        border-radius: 10px;
+    }
+}
+
+.preview-gap {
+    background: 0, 0, 0, 0;
+    height: 1.4em;
+    font-size: 1em;
+    color: white;
+    border-width: 0px !important;
+    border-bottom-width: 0.5px !important;
+    border-color: white;
+    max-width: 9em;
+}
+
+.preview-gap:focus {
+    outline: none;
+}
+
+.preview-gap:hover {
+    cursor: not-allowed;
+}
+
+img {
+    width: 12vh;
+    height: auto;
+}
+#campfire {
+    width: 80vh;
+    height: auto;
+    border-radius: 20px;
+
+    animation-name: burn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes burn {
+    0% {
+        box-shadow: 0px 0px 100px 90px rgba(150, 118, 91, 1);
+    }
+    20% {
+        box-shadow: 0px 0px 80px 60px rgba(150, 118, 91, 1);
+    }
+    40% {
+        box-shadow: 0px 0px 80px 50px rgba(150, 118, 91, 1);
+    }
+    60% {
+        box-shadow: 0px 0px 70px 60px rgba(150, 118, 91, 1);
+    }
+    80% {
+        box-shadow: 0px 0px 80px 70px rgba(150, 118, 91, 1);
+    }
+    100% {
+        box-shadow: 0px 0px 100px 90px rgba(150, 118, 91, 1);
+    }
+}
+
+#volume {
+    max-width: 15vw;
+}
+
+.selectEffect{
+  
+}

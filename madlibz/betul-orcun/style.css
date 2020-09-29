@@ -1,0 +1,108 @@
+*{
+    background: #000;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: space-around;
+  }
+  
+  
+  
+  @media screen and (max-width: 1200px) {
+    .snowMan {
+      display: none;
+    }
+    .madLibsEdit,.madLibsPreview{
+      margin-right: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .madLibsEdit, .madLibsPreview{
+      margin: 0 30% 0 10%;
+    }
+  }
+  
+  .snowMan{
+    position: absolute;
+  }
+  
+  iframe {
+    border: none;    
+    width: 94em;
+    height: 45em;   
+  }
+  
+  .content{
+    z-index: 1;
+    position: relative;
+    margin-left: 10em;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }
+  
+  .madLibsEdit, .madLibsPreview{
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-align: center;
+    line-height: 2em;
+    flex-basis: auto;
+    margin-bottom: 50px;
+    font-size: 13px;
+  }
+  
+  .madLibsPreview{
+    line-height: 3em;
+  }
+  
+  input{
+    width: 20%;
+    padding: 2px 10px;
+    margin: 8px 10px;
+    border: 2px dashed #760808;
+    border-radius: 4px;
+    text-align: center
+  }
+  
+  input:focus {
+    background-color:#ccc9c9;
+    border: 2px solid #ccc9c9;
+    color: #0e0d0d;
+  }
+  
+  .spanClass{
+    color: #d68888;
+  }
+  
+  .glow {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+  }
+  
+  
+  /* glowing text formatting */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bb2136,
+        0 0 40px #bb2136, 0 0 50px #bb2136, 0 0 60px #bb2136, 0 0 70px #bb2136;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000,
+        0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+    }
+  }

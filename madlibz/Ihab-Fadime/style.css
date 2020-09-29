@@ -1,0 +1,120 @@
+/**
+ * Your CSS goes here.
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #e93b32;
+  --pink: #ec5f55;
+  --darkYellow: #ffc349;
+  --lightYellow: #fed97e;
+  --green: #00b84d;
+}
+/* how we use variable var(--red)*/
+
+html {
+  scroll-behavior: smooth;
+}
+p a:link {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(
+    42deg,
+    rgba(64, 44, 31, 1) 0%,
+    rgb(216, 6, 2) 48%,
+    rgba(64, 44, 31, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  color: var(--darkYellow);
+}
+p {
+  color: var(--lightYellow);
+}
+
+span {
+  color: var(--darkYellow);
+  font-size: 1.5em;
+}
+
+input {
+  transition: 0.5s;
+  width: 6rem;
+  border-width: 2px; /* doesnt work*/
+  border-radius: 2px; /* doesnt work*/
+  background-color: white;
+}
+
+input::placeholder {
+  text-align: center;
+  color: var(--green);
+}
+input:focus {
+  background-color: rgb(255, 153, 0);
+  color: white;
+}
+
+input:focus::placeholder {
+  color: white;
+}
+.filled {
+  background-color: var(--green);
+  color: white;
+  border-radius: 2px;
+  border-color: white;
+}
+
+mark {
+  border-radius: 2px;
+  color: var(--green);
+}
+
+.jumbotron {
+  height: 100vh;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+#story {
+  height: 70vh;
+}
+
+.footer {
+  background-color: var(--green);
+  height: 25px;
+}
+
+.madLibsEdit {
+  margin-bottom: 2rem;
+}
+
+.madLibsPreview,
+.save,
+.load,
+.clear {
+  margin-bottom: 4rem;
+}

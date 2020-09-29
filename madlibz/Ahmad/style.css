@@ -1,0 +1,13 @@
+.madLibsEdit{
+  background-color: #eee;
+}
+.display-3{
+  text-shadow:5px 5px 10px #ccc;
+}
+body{
+  background-image: url("/MadLibs.png");
+}
+footer{
+  color: #000 !important;
+  background-color: #eee;
+}

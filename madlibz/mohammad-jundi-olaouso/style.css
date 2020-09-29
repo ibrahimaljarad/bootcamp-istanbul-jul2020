@@ -1,0 +1,127 @@
+*{
+	box-sizing: content-box;
+	margin: 0;
+	padding: 0;
+}
+ body {
+	text-align: center;
+	font-size: 2rem;
+	background-color: skyblue;
+	display: flex;
+	flex-wrap: wrap;
+}
+.header {
+	font-family: 'Pangolin', cursive;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: black;
+	width: 100%;
+	text-shadow: 1px 1px 2px white, 0 0 5px pink, 0 0 5px rgba(187, 68, 141, 0.911);
+}
+.story{
+	display: flex;
+	flex-direction: row;
+}
+#videoBG {
+	position:fixed;
+	z-index: -1;
+	width:100%;     
+	height: auto;
+} 
+/* #videoBGsmall{
+	display: none;
+} */
+.madLibsEdit{
+	font-family: 'Pangolin', cursive;
+	background: rgba(255, 255, 255, 0.5);
+	border: solid rgb(201, 124, 124);
+	border-radius: 5rem;
+	box-shadow: 1px 1px 2px white, 0 0 25px pink, 0 0 25px rgba(187, 68, 141, 0.911);
+	font-size: 2rem;
+	color: black;
+	width: 45%;
+	padding: 5%;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	text-shadow: 1px 1px 2px white, 0 0 5px pink, 0 0 5px rgba(187, 68, 141, 0.911);
+}
+.madLibsPreview {
+	font-family: 'Pangolin', cursive;
+	background: rgba(255, 255, 255, 0.5);
+	border: solid rgb(201, 124, 124);
+	border-radius: 5rem;
+	box-shadow: 1px 1px 2px white, 0 0 25px pink, 0 0 25px rgba(187, 68, 141, 0.911);
+	font-size: 2rem;
+	color: black;
+	width: 45%;
+	padding: 5%;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	text-shadow: 1px 1px 2px white, 0 0 5px pink, 0 0 5px rgba(187, 68, 141, 0.911);
+}
+
+input {
+    background-color: rgb(179, 84, 179);
+    text-align: center;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    font-size: 1rem;
+    width: 3.5rem;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+}
+input:placeholder-shown {
+    background-color: yellowgreen;
+  }
+
+.byMandO {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+input:hover {
+    background-color: wheat;
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 766px) {
+	body {
+		text-align: center;
+		font-size: 1rem;
+	}
+	.story {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.story div {
+		font-size: 0.8rem;
+	}
+	/* #videoBG {
+		display: none;
+	}
+	#videoBGsmall {
+		display: initial;
+		position:fixed;
+		z-index: -1;
+		width:100%;     
+		height: auto;
+	} */
+	input{
+		background-color: rgb(179, 84, 179);
+		text-align: center;
+		padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
+		font-size: 0.5rem;
+		width: 2rem;
+		padding: 1.5px 0px 1.5px 1.5px;
+		margin: 2.5px 0.5px 1.5px 0px;
+	}
+}

@@ -1,0 +1,55 @@
+/*Your CSS goes here.*/
+body {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/414a9281017073.5cf1d8920b7a2.gif");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; /*viewport height*/
+  margin: 0 auto;
+  color: oldlace;
+}
+
+audio {
+  color: white;
+  opacity: 0;
+  display: hidden;
+}
+
+audio:hover {
+  display: inline;
+  opacity: 0.2;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px black;
+  /*2px's are vertical and horizontal shadowing; 5px is for blur*/
+  font-size: 3.75em;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 1em;
+}
+
+.story {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.25em;
+  margin-left: 4em;
+  margin-right: 4em;
+  text-align: justify;
+}
+
+.madLibsEdit {
+  margin-right: 3em;
+}
+
+.madLibsPreview {
+  margin-left: 3em;
+}
+
+@media (max-width: 600px) {
+  .story {
+    flex-direction: column;
+  }
+}
